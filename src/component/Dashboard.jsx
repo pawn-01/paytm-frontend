@@ -38,7 +38,7 @@ const Dashboard = () => {
     const fetchData = async () => {
       try {
           const response = await axios.get(
-              "http://localhost:3001/api/v1/account/balance",
+              "https://paytm-backend-yufy.onrender.com/api/v1/account/balance",
                 // Empty data as no data is being sent in the POST request body
               {
                   headers:{

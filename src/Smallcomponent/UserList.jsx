@@ -11,7 +11,7 @@ const UserList = ({name,load}) => {
         const fetchData = async () => {
             try {
                 const response = await axios.get(
-                    "http://localhost:3001/api/v1/user/bulk?filter="+name, 
+                    "https://paytm-backend-yufy.onrender.com/api/v1/user/bulk?filter="+name, 
                      {
                         headers:{
                             Authorization:"Bearer "+localStorage.getItem("token")

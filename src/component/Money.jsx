@@ -10,7 +10,7 @@ const Money = () => {
   const id = search.get("id");
 
   async function Transcation(){
-       const res = await axios.post("http://localhost:3001/api/v1/account/transfer",{
+       const res = await axios.post("https://paytm-backend-yufy.onrender.com/api/v1/account/transfer",{
          amount:value,
          to:id
        },{

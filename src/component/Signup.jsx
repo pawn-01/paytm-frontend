@@ -28,7 +28,7 @@ const Signup = () => {
         const fetchData = async () => {
           try {
               const response = await axios.post(
-                  "http://localhost:3001/api/v1/user/me",
+                  "https://paytm-backend-yufy.onrender.com/api/v1/user/me",
                    {}, // Empty data as no data is being sent in the POST request body
                   {
                       headers: {
@@ -55,7 +55,7 @@ const Signup = () => {
       
 
   async function getdata(){
-   const res =  await fetch("http://localhost:3001/api/v1/user/signup",{
+   const res =  await fetch("https://paytm-backend-yufy.onrender.com/api/v1/user/signup",{
            method:'POST',
            mode:"cors",
            headers: {
